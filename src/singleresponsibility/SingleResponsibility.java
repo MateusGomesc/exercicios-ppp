@@ -5,6 +5,7 @@ public class SingleResponsibility {
 
     public SingleResponsibility() {
        doIncorrectImplementation();
+       doCorrectImplementation();
     }
     
     
@@ -31,7 +32,9 @@ public class SingleResponsibility {
          * Adicione aqui seu código refatorado com referências a métodos e classes 
          * contidas no pacote singleresponsibility.correct
          */
-
+        singleresponsibility.correct.Book book = new singleresponsibility.correct.Book("Redes de Computadores", "Martin", "Código Limpo");
+        singleresponsibility.correct.BookPrinter bookPrinter = new singleresponsibility.correct.BookPrinter();
+        bookPrinter.printAuthor(book.getAuthor());
     }
     
     public static void main(String [] args ) {
