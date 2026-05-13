@@ -1,7 +1,7 @@
 package openclosed.incorrect;
 
 public class Circle {
-    
+
     private int radius;
 
     public Circle(int radius) {
@@ -11,5 +11,5 @@ public class Circle {
     public int getRadius() {
         return radius;
     }
-    
+
 }

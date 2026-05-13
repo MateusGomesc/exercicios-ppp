@@ -1,9 +1,13 @@
 package openclosed;
 
+import openclosed.correct.Circle;
+import openclosed.correct.Rectangle;
+
 public class OpenClosed {
     
     public OpenClosed(){
         doIncorrectImplementation();
+        doCorrectImplementation();
     }
     
     public void doIncorrectImplementation(){
@@ -32,8 +36,11 @@ public class OpenClosed {
          * Adicione aqui seu código refatorado com referências a métodos e classes
          * contidas no pacote openclosed.correct
          */
-        
-        
+        openclosed.correct.Rectangle r = new openclosed.correct.Rectangle(5, 10);
+        openclosed.correct.Circle c = new openclosed.correct.Circle(5);
+        openclosed.correct.GeometryOperation g = new openclosed.correct.GeometryOperation();
+        System.out.println("Area do retangulo -> " + g.getArea(r));
+        System.out.println("Area do circulo -> " + g.getArea(c));
     }
     
     public static void main(String [] args ) {
