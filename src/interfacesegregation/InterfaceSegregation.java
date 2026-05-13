@@ -3,7 +3,7 @@ package interfacesegregation;
 public class InterfaceSegregation {
     
     public InterfaceSegregation() {
-        doIncorrectImplementation();
+        doCorrectImplementation();
     }
     
 
@@ -37,7 +37,15 @@ public class InterfaceSegregation {
          * contidas no pacote interfacesegregation.correct
          */
         
-        
+        interfacesegregation.correct.Crow c = new interfacesegregation.correct.Crow();
+        interfacesegregation.correct.Penguin p = new interfacesegregation.correct.Penguin();
+
+        c.eat();
+        c.sleep();
+        c.fly();
+
+        p.eat();
+        p.sleep();
     }
     
     public static void main(String [] args) {
